@@ -1,20 +1,20 @@
 # TARGET NAME
-TARGET := ex02
+TARGET:=ex02
 
 # OBJECT FILES
-OBJS := ex02.o
+OBJS:=ex02.o
 
 #SOURCE FILES
-SRCS := $(OBJS:%.o=%.c)
+SRCS:=$(OBJS:%.o=%.c)
 
 # COMPILER TYPE
-CC := gcc
+CC:=gcc
 
 # COMPILER OPTION
-CFLAGS := -g -Wall -Wextra -DDEBUG = 1
+CFLAGS:=-g -Wall -Wextra -DDEBUG = 1
 
 # DYNAMIC LIBRARY
-LDFLAGS := -lpthread
+LDFLAGS:=-lpthread
 
 # MAKE ALL (PHONY TARGET)
 .PHONY: all
